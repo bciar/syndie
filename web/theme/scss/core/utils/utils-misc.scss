@@ -1,0 +1,39 @@
+// -------------------------------------------
+// Misc. utilities & helper class
+// -------------------------------------------
+
+.row-hover {
+  &:hover {
+    background-color: rgba($brand-faded, 60%/100.0%);
+  }
+}
+
+.clickable-element {
+  cursor: pointer;
+  
+  &:hover {
+    @include opacity(0.9);
+  }
+}
+
+[data-scroll="scroll-state"] {
+  // Starts hidden, shows on scroll state active
+  &.scroll-state-hidden {
+    display: none;
+    
+    &.scroll-state-active {
+      display: block;
+    }
+  }
+  
+  // Starts shown, hides on scroll state active
+  &.scroll-state-shown {
+    display: block;
+    
+    &.scroll-state-active {
+      display: none;
+    }
+  }  
+}
+
+

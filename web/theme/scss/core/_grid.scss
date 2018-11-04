@@ -1,0 +1,45 @@
+//
+// Grid & Flexbox
+// --------------------------------------------------
+.grid-demo .row {
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+}
+.grid-demo .row > .col, .grid-demo .row > [class^=col-] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+
+// Flexbox classes
+// -----------------------------------
+.flex-ew,
+.flex-fullwidth {
+  flex: 1;
+  width: 100%; 
+}
+.flex-valign  {
+  @extend %flex-d-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;  
+}
+.flex-valign-b  {
+  @extend %flex-d-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;  
+}

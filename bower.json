@@ -1,0 +1,26 @@
+{
+  "name": "syndie",
+  "homepage": "https://github.com/felders/syndie",
+  "authors": [
+    "bciar <bciar@yandex.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "tether": "^1.4.0",
+    "jquery-ui": "^1.12.1",
+    "jquery-touchswipe": "^1.6.18",
+    "bootbox.js": "bootbox#^4.4.0",
+    "slick-carousel": "^1.6.0"
+  }
+}

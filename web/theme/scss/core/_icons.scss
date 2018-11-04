@@ -1,0 +1,112 @@
+// Misc.
+// -------------------------------------------
+.fa {
+  vertical-align: middle;
+}
+
+// Icon helpers
+// -------------------------------------------
+.icon-1x {
+  font-size: 24px; // reset
+}
+.icon-2x {
+  font-size: 2em;
+}
+.icon-3x {
+  font-size: 3em;
+}
+.icon-4x {
+  font-size: 4em;
+}
+.icon-5x {
+  font-size: 5em;
+}
+.icon-6x {
+  font-size: 6em;
+}
+.icon-7x {
+  font-size: 7em;
+}
+.icon-8x {
+  font-size: 8em;
+}
+.icon-9x {
+  font-size: 9em;
+}
+.icon-10x {
+  font-size: 10em;
+}
+.icon-15x {
+  font-size: 15em;
+}
+.icon-20x {
+  font-size: 20em;
+}
+.icon-25x {
+  font-size: 25em;
+}
+.icon-30x {
+  font-size: 30em;
+}
+
+//rotates
+.icon-rotate-25 {
+  @include rotate(25deg);
+}
+.icon-rotate-45 {
+  @include rotate(45deg);
+}
+.icon-rotate-90 {
+  @include rotate(90deg);
+}
+.icon-rotate-180 {
+  @include rotate(180deg);
+}
+.icon-rotate-270 {
+  @include rotate(270deg);
+}
+.icon-flip-h {
+-webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);  
+}
+.icon-flip-v {
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);  
+}
+
+// background icons
+.icon-bg {
+  position: absolute;
+  @include opacity(0.5);
+  top: 3%;
+  left: 3%;
+  right: 3%;
+  
+  &.icon-bg-r {
+    left: auto;
+    right: 3%;
+  }
+  &.icon-bg-b {
+    top: auto;
+    bottom: 3%;
+  }
+
+  &.icon-bg-r-ol {
+    left: auto;
+    right: -3%;
+  }
+  &.icon-bg-l-ol {
+    left: -3%;
+    right: auto;
+  }  
+  &.icon-bg-t-ol {
+    top: -3%;
+    bottom: 0;
+  }  
+  &.icon-bg-b-ol {
+    top: 0;
+    bottom: -3%;
+  }  
+}

@@ -1,0 +1,17 @@
+[0m[31;1mException[0m[0m[1;34m 'yii\base\Exception'[0m with message [0m[1m'Tried to create exaloc_id for user 19. API returned: {"status":false,"message":"","errors":[{"code":0,"message":"The currency field should not be blank."},{"code":0,"message":"The currency field is invalid. Use one of these: eur, usd, gbp."}]}'[0m
+
+in /var/www/html/syndie/commands/[0m[1mTaskController.php[0m:[0m[1;33m208[0m
+
+[0m[1mStack trace:
+[0m#0 /var/www/html/syndie/commands/TaskController.php(47): app\commands\TaskController->registerPlayers()
+#1 [internal function]: app\commands\TaskController->actionIndex()
+#2 /var/www/html/syndie/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/syndie/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/syndie/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/syndie/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#6 /var/www/html/syndie/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('task', Array)
+#7 /var/www/html/syndie/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('task', Array)
+#8 /var/www/html/syndie/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/html/syndie/yii(20): yii\base\Application->run()
+#10 {main}
+^C
